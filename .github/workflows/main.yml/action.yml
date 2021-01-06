@@ -1,5 +1,5 @@
 name: run style check
-description: 'runs phpunit test uisng the stubs submodule'
+description: 'runs a php style check based on symcons style'
 
 runs:
   using: "composite"
