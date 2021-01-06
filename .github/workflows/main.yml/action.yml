@@ -1,0 +1,12 @@
+name: run style check
+description: 'runs phpunit test uisng the stubs submodule'
+
+runs:
+  using: "composite"
+  steps:
+      - run: git submodule update --init -- .style
+        shell: bash
+      - run: wget https://cs.symfony.com/download/php-cs-fixer-v2.phar
+        shell: bash
+      - run: php php-cs-fixer-v2.phar fix --config=.style/.php_cs -v --dry-run --allow-risky=yes .
+        shell: bash
