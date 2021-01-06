@@ -1,5 +1,5 @@
 name: Run Style Check
-description: 'runs a php style check based on symcons style'
+description: 'Runs a php style check based on symcons style'
 
 runs:
   using: "composite"
