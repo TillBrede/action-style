@@ -1,4 +1,4 @@
-name: run style check
+name: Run Style Check
 description: 'runs a php style check based on symcons style'
 
 runs:
